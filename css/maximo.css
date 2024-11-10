@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #FFD930;
+    --secundary-color:#FAD92B;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../src/imgs/pichu-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    font-family: 'Righteous', cursive;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.pokeboll{
+    width: 5.5rem;
+    margin: 10px;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container--title{
+    position: relative;
+    text-align: center;
+}
+
+.title--text{
+    font-size: 20vw;
+    color: #000;
+}
+
+.title--transparent{
+    position: absolute;
+    font-size: 20vw;
+    top: -25%;
+    right: 0%;
+    opacity: 0.3;
+    left: 1vw;
+}
+
+.pichu--image{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: var(--secundary-color)
+}
+
+.container div{
+    width: 55%;
+    z-index: 1;
+}
+.container h2{
+    font-size: 4vh;
+    color: red;
+    text-align: start;
+    margin: 10px;
+    
+}
+
+
+.container p{
+    color: #000;
+    font-size: 2vh;
+    width: 30vw;
+    background-color: var(--secundary-color);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.action{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 60px;
+}
+
+.action a{
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.action:hover a{
+    color: #fff;
+}
+footer{
+    height: 50px;
+}
